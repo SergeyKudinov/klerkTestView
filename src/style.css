@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-switch::after {
+    content: "";
+    @apply rounded-full bg-[#FFFFFF] absolute top-[1px] left-[2px] transform scale-110 transition duration-300;
+}
+.toggle-switch:checked::after {
+    @apply transform translate-x-full;
+}
